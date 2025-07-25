@@ -1,29 +1,61 @@
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #f6f6f6;
-  text-align: center;
-}
-
-h1, h2 {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f7;
   color: #333;
 }
 
-.tasks a {
-  display: block;
-  margin: 20px auto;
-  width: 200px;
-  padding: 10px;
-  background-color: #0070f3;
+header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
+  border-radius: 0 0 20px 20px;
 }
 
-img {
-  width: 80%;
+.task-buttons {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.task-buttons button {
+  margin: 0 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-buttons button:hover {
+  background-color: #388e3c;
+}
+
+.task-section {
+  display: none;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.task-section.active {
+  display: flex;
+}
+
+.task-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
   max-width: 800px;
-  margin: 20px auto;
-  border: 2px solid #ccc;
-  display: block;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+.task-card img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
