@@ -1,18 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>AWS Tasks | Tushar Agarwal</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terraform Tasks - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>AWS Resource Deployment Showcase</h1>
-  <p><strong>Name:</strong> Tushar Agarwal</p>
-  <p><strong>Email:</strong> tusharagarwal1385@gmail.com</p>
+  <header>
+    <h1>Terraform Tasks</h1>
+    <p>By Tushar Agarwal</p>
+  </header>
 
-  <div class="tasks">
-    <a href="task1.html">Task 1: EC2, VPC, EBS</a>
-    <a href="task2.html">Task 2: Lambda, S3, RDS</a>
-    <a href="task3.html">Task 3: CloudWatch, CloudTrail, CDK</a>
-  </div>
+  <nav class="task-buttons">
+    <button onclick="showTask('task1')">🗂️ Task 1</button>
+    <button onclick="showTask('task2')">⚙️ Task 2</button>
+    <button onclick="showTask('task3')">🧠 Task 3</button>
+  </nav>
+
+  <section id="task1" class="task-section active">
+    <div class="task-card">
+      <h2>1️⃣ Task 1 - EC2 Setup with Terraform</h2>
+      <p>
+        In this task, I used Terraform to automate the provisioning of an EC2 instance on AWS.
+        The configuration included defining the AWS provider, setting up the necessary credentials,
+        and writing a simple Terraform script (main.tf) to launch a t2.micro instance using a specified AMI
+        in the us-east-1 region.
+      </p>
+      <h3>Screenshots</h3>
+    <img src="images/task1/WhatsApp Image 2025-07-25 at 23.29.23_3cd9d11f.jpg" alt="EC2 Instance">
+  <img src="images/task1/WhatsApp Image 2025-07-25 at 23.30.07_78bc8842.jpg" alt="Terraform on Aws"> 
+    </div>
+  </section>
+
+  <section id="task2" class="task-section">
+    <div class="task-card">
+      
+      <p>
+        Launch a secure Ubuntu EC2 instance in AWS with SSH and HTTPS access 
+        using the default VPC and latest official Ubuntu AMI.
+      </p>
+      <h3>Screenshots</h3>
+      <img src="images/task2/WhatsApp Image 2025-07-25 at 23.29.23_5856a507.jpg" alt="EC2 instance">
+  <img src="images/task2/WhatsApp Image 2025-07-25 at 23.27.43_4a9f7e11.jpg">
+    </div>
+  </section>
+
+  <section id="task3" class="task-section">
+    <div class="task-card">
+      <h2>3️⃣ Task 3</h2>
+      <h3>Screenshots</h3>
+      <img src="images/task3/WhatsApp Image 2025-07-25 at 23.13.20_6c7c6dcb.jpg" alt="EC2 Instance">
+  <img src="images/task3/WhatsApp Image 2025-07-25 at 23.17.57_96507dc6.jpg" alt="Custom VPC">
+  <img src="images/task3/WhatsApp Image 2025-07-25 at 23.21.13_28685ed8.jpg" alt="EBS Volume">
+  <img src="images/task3/WhatsApp Image 2025-07-25 at 23.19.15_5be6ff1d.jpg" alt="Lambda">
+  <img src="images/task3/WhatsApp Image 2025-07-25 at 23.19.54_d396ae9c.jpg" alt="S3 bucket">
+    </div>
+  </section>
+
+  <script>
+    function showTask(taskId) {
+      document.querySelectorAll('.task-section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(taskId).classList.add('active');
+    }
+  </script>
 </body>
 </html>
