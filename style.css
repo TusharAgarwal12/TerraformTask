@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.tasks a {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  padding: 10px;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+img {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  display: block;
+}
